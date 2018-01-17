@@ -37,23 +37,25 @@
             // 
             // XML_textBox
             // 
-            this.XML_textBox.Location = new System.Drawing.Point(12, 69);
+            this.XML_textBox.Location = new System.Drawing.Point(12, 34);
             this.XML_textBox.Multiline = true;
             this.XML_textBox.Name = "XML_textBox";
-            this.XML_textBox.Size = new System.Drawing.Size(233, 120);
+            this.XML_textBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.XML_textBox.Size = new System.Drawing.Size(296, 245);
             this.XML_textBox.TabIndex = 0;
             // 
             // JSON_textBox
             // 
-            this.JSON_textBox.Location = new System.Drawing.Point(266, 69);
+            this.JSON_textBox.Location = new System.Drawing.Point(362, 34);
             this.JSON_textBox.Multiline = true;
             this.JSON_textBox.Name = "JSON_textBox";
-            this.JSON_textBox.Size = new System.Drawing.Size(233, 120);
+            this.JSON_textBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.JSON_textBox.Size = new System.Drawing.Size(296, 245);
             this.JSON_textBox.TabIndex = 1;
             // 
             // Convert
             // 
-            this.Convert.Location = new System.Drawing.Point(208, 207);
+            this.Convert.Location = new System.Drawing.Point(283, 302);
             this.Convert.Name = "Convert";
             this.Convert.Size = new System.Drawing.Size(107, 23);
             this.Convert.TabIndex = 2;
@@ -64,7 +66,7 @@
             // labelXML
             // 
             this.labelXML.AutoSize = true;
-            this.labelXML.Location = new System.Drawing.Point(12, 53);
+            this.labelXML.Location = new System.Drawing.Point(9, 9);
             this.labelXML.Name = "labelXML";
             this.labelXML.Size = new System.Drawing.Size(29, 13);
             this.labelXML.TabIndex = 3;
@@ -73,7 +75,7 @@
             // labelJSON
             // 
             this.labelJSON.AutoSize = true;
-            this.labelJSON.Location = new System.Drawing.Point(263, 53);
+            this.labelJSON.Location = new System.Drawing.Point(355, 9);
             this.labelJSON.Name = "labelJSON";
             this.labelJSON.Size = new System.Drawing.Size(35, 13);
             this.labelJSON.TabIndex = 4;
@@ -83,7 +85,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(511, 261);
+            this.ClientSize = new System.Drawing.Size(671, 337);
             this.Controls.Add(this.labelJSON);
             this.Controls.Add(this.labelXML);
             this.Controls.Add(this.Convert);

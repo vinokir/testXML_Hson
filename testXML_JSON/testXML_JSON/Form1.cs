@@ -7,11 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Newtonsoft.Json;
+
 using System.Xml;
+using System.Xml.Linq;
 
 namespace testXML_JSON
 {
+   
     public partial class ConvertXMLtoJson_Form : Form
     {
         public ConvertXMLtoJson_Form()
@@ -23,15 +25,14 @@ namespace testXML_JSON
         {
             try
             {
-                XmlDocument doc = new XmlDocument();
-                doc.LoadXml(XML_textBox.Text);
-                string jsonText = JsonConvert.SerializeXmlNode(doc);
-                JSON_textBox.Text = jsonText;
+                XDocument doc = XDocument.Parse(XML_textBox.Text);
+                Logic log = new Logic();
+                JSON_textBox.Text = log.GetJson(doc);
             }
             catch (System.Xml.XmlException ex)
             {
-                MessageBox.Show(ex.Message);
-            }  
+                 MessageBox.Show(ex.Message);
+            }
         }
     }
 }
